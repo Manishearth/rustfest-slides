@@ -1,56 +1,3 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>"Open" as in "Welcoming": Facilitating Contributions</title>
-
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<style type="text/css">
-			.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-				text-transform: initial;
-			}
-			.fragment.otherwise-nolayout.visible:not(.current-fragment) {
-			    display: none;
-			    height:0px;
-			    line-height: 0px;
-			    font-size: 0px;
-			}
-			.reveal section img {
-				border: none;
-			}
-			.reveal section img.blend {
-				border: none;
-				background: none;
-				box-shadow: initial;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-<section data-markdown data-separator-notes="^♫" data-separator="^§$" data-separator-vertical="^§§$">
-	<script type="text/template">
-### "Open" as in "Welcoming"
-
-#### Facilitating Contributions
-
-<small> &mdash; Manish Goregaokar (@Manishearth)</small>
-
 ♫
 
 (Introduce self and stuff if not introduced already)
@@ -59,9 +6,6 @@ Hi, I'm Manish. I work on Servo, and have been involved in the Rust community fo
 
 I'm going to talk about how we can be more "open", as in "welcoming", in our community.
 
-
-§
-### "Open"?
 
 ♫
 
@@ -83,11 +27,6 @@ I feel like this should change. I feel like people wanting to participate should
 
 So, I want to show you how your open source projects can be _welcoming_, not just _available_.
 
-§
-
-### 💛
-<img src="img/rust-logo-blk.svg" width="50%" class=blend></img>
-
 ♫
 
 I'd like to take a moment to just say that the Rust community -- all of you, and the thousands of
@@ -95,14 +34,6 @@ others not here right now -- is one of the most welcoming online communities I'v
 are patient, empathetic, and helpful.
 
 My goal is for us to be even better 😀
-
-§
-### Why?
-
- - It's the right thing!  <!-- .element: class="fragment" -->
- - Serious contributors don't start out that way  <!-- .element: class="fragment" -->
- - It's not that much effort  <!-- .element: class="fragment" -->
- - It ends up being worth it  <!-- .element: class="fragment" -->
 
 ♫
 Why should one bother to do this?
@@ -128,9 +59,6 @@ the amount of time you would need to fix it yourself.
 put into this more than recoups itself when being welcoming ends up in adding
 long-term contributors to the team.
 
-§
-<img src="img/servo-transparent.png" width="50%" class="blend"></img>
-
 ♫
 One example of this is Servo. Servo's an experimental browser engine in Rust, and in my opinion
 it's an extremely welcoming open source project. We do tons of mentoring, and as a result we have a
@@ -142,23 +70,8 @@ We now are in a situation where _too many_ new contributors is a problem. We fil
 and they get snapped up quickly. We keep running out! This happens so often that Simon invented
 a term for it:
 
-§§
-<img src="img/omnom.png" width="50%" class="blend"></img>
-
 ♫
 the E-Easy piranhas.
-
-§
-<img src="img/peeps/andre.png" width="100px" class="blend fragment" data-lint="24" data-contributors="11" style="position: absolute; top: 0px; left: 10px;"></img>
-<img src="img/clippy-repo.png" width="70%"></img>
-<div class="fragment">
-	Lints: <span id=lintcount>24</span><br>
-	Contributors: <span id=contributorcount>11</span>
-</div>
-<img src="img/peeps/georg.png" width="100px" class="blend fragment" data-lint="59" data-contributors="19" style="position: absolute; top: 150px; left: 10px;"></img><!-- b86ebad0e77aa4b87b9b8ae23fce5179d106a079 -->
-<img src="img/peeps/martin.png" width="100px" class="blend fragment" data-lint="125" data-contributors="45" style="position: absolute; top: 0px; right: 10px;"></img> <!-- 17b7b413f7e89be6879ea99c3aefc76c41416e87 -->
-<img src="img/peeps/oli.png" width="100px" class="blend fragment" data-lint="162" data-contributors="60" style="position: absolute; top: 150px; right: 10px;"></img> <!-- bf4c4294bf344c560115fb0a0112ee4d822dccd0 -->
-<span class=fragment data-lint="197" data-contributors="97"></span>
 
 ♫
 
@@ -196,26 +109,12 @@ These days I don't have the time to hack on clippy, but thanks to my amazing co-
 the project is chugging along and becoming better every day. None of this would have happened if we hadn't
 put the effort into making clippy welcoming and accessible for contributions.
 
-§
-### How?
-
 ♫
 
 ...Anyway. All of this is to say that putting some effort into opening up your project can go a long
 way.
 
 Let's see _how_ we can do this effectively.
-
-§
-### Easy bugs
-
-- Bite sized tasks <!-- .element: class="fragment" -->
-- Extract from existing work <!-- .element: class="fragment" -->
-- Not critical, but possibly impactful <!-- .element: class="fragment" -->
-- Provide some context and links <!-- .element: class="fragment" -->
-- Consolidate common info into guides <!-- .element: class="fragment" -->
-- Solicit questions <!-- .element: class="fragment" -->
-- Docs! Infra! <!-- .element: class="fragment" -->
 
 ♫
 
@@ -259,24 +158,6 @@ work, that is, fixing CI, build configs, etc, can be made into easy bugs. Servo 
 frequent contributions. We even have an experienced contributor who put significant effort into
 completely revamping how our infrastructure works and making it much better.
 
-§
-### Document, document, document
-
-<small style="line-height: 150%">
-- README.md <!-- .element: class="fragment" -->
-  - Build instructions <!-- .element: class="fragment" -->
-  - Prominent link to contributing info <!-- .element: class="fragment" -->
-- CONTRIBUTING.md <!-- .element: class="fragment" -->
-  - Patch workflow <!-- .element: class="fragment" -->
-  - Links to discussion channels <!-- .element: class="fragment" -->
-  - Info on tests <!-- .element: class="fragment" -->
-  - Overview of codebase segments <!-- .element: class="fragment" -->
-  - Links to API docs <!-- .element: class="fragment" -->
-- Code of conduct <!-- .element: class="fragment" -->
-- (Github) Issue and PR templates <!-- .element: class="fragment" -->
-
-</small>
-
 ♫
 Document everything. These are questions you'll get asked anyway, better write them down once.
 This both saves your time and aids people who are too intimidated to ask questions.
@@ -314,10 +195,6 @@ Servo uses these templates to provide checklists for contributors, to remind the
 things whilst submitting. This helps automate away having to ask contributors to do things like
 run tests.
 
-§
-
-### Relax process!
-
 ♫
 
 One of the most common sources of friction for newcomers is overcomplicated contribution processes.
@@ -347,14 +224,6 @@ pull request, but there's no reason they need to learn to do that up front.
 In general it's always nice to make such bits of process optional or provide alternatives.
 As a contributor gets more involved, they'll be able to learn these things at a relaxed pace.
 
-§
-### Mentoring
-
- - Be a companion, not a driver <!-- .element: class="fragment" -->
- - Set expectations <!-- .element: class="fragment" -->
- - Not necessarily 1-on-1 <!-- .element: class="fragment" -->
- - Follow up! <!-- .element: class="fragment" -->
-
 ♫
 So, you've got someone on your issue tracker wanting help fixing a bug. Of course
 you should answer their questions, but what else is involved in mentoring?
@@ -381,15 +250,6 @@ cracks in such a process.
 ¶ Follow up! If a new contributor just landed a patch, point them to a similar but more
 involved bug as a next step. If you don't have one, remember to ping them the next time you see one.
 This makes them know you care, and keeps them engaged.
-
-§
-### Empathy
-
- - Unnecessary Expectations: <!-- .element: class="fragment" -->
-    - Familiarity with tools <!-- .element: class="fragment" -->
-    - Familiarity with the programming language <!-- .element: class="fragment" -->
-    - Fluency with the language of communications <!-- .element: class="fragment" -->
- - Inclusive language: (avoid "just") <!-- .element: class="fragment" -->
 
 ♫
 It's important to understand where your contributors are coming from. One of the most
@@ -418,20 +278,7 @@ Not everyone will be fluent!
 Finally, ¶ use inclusive language! Avoid using phrases like "just do X". While the task may seem
 simple to you, there may be complexities that you have ignored because you're used to the task. It's
 very hard to put yourself completely in their shoes -- so don't assume you have. It's very discouraging
-when someone tells you to "just do X" or "simply do X" and you find out that it's hard.
-
-§
-### A Dream
-
-<span class="fragment current-visible otherwise-nolayout">All open source</span>
-<span class="fragment">The Rust community</span> 
-<span class="fragment"> should be a place where</span>
-<span class="fragment"> the answer to the question</span>
-<br><div class="fragment" style="align: center">"how do I get better in Rust"</div>
-<span class="fragment"> is </span>
-<div class=fragment>"pick literally any Rust crate that interests you"</div>
-<span class="fragment"> and </span>
-<div class=fragment>"the rest will be obvious"</div>
+when someone tells you to "just do X" and you find out that it's hard.
 
 ♫
 I'd sort of like to tie this all together by pitching a dream I have. It's a dream I hope you adopt as your own.
@@ -449,62 +296,7 @@ though there are other valid reasons one may wish to do the same.
 
 I'm going to leave you all with a wonderful quote from Toni Morrison that helps motivate why I feel that way.
 
-§
-<blockquote style="font-size:70%; border: none; box-shadow: initial;"> I tell my students, 'When you get these jobs that you have been so brilliantly
-trained for, just remember that your real job is that if you are free, you need to free somebody
-else. If you have some power, then your job is to empower somebody else. This is not just a grab-bag
-candy game.</blockquote>
-<span style="float:right"> &mdash; Toni Morrison </span>
-
 ♫
 
 (read quote)
 
-§
-### Thank you!
-
- - Short words: https://twitter.com/Manishearth
- - Long words: https://manishearth.github.io
-
-
-	</script>
-</section>
-			</div>
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-			Reveal.addEventListener( 'fragmentshown', function( event ) {
-				if (event.fragment.hasAttribute("data-lint")) {
-					document.getElementById('lintcount').innerText = event.fragment.getAttribute("data-lint");
-					document.getElementById('contributorcount').innerText = event.fragment.getAttribute("data-contributors");
-				}
-			} );
-			Reveal.addEventListener( 'fragmenthidden', function( event ) {
-				let frag = document.getElementsByClassName("current-fragment");
-				if (frag.length < 0) {
-					return
-				}
-				let fragment = frag[0];
-				if (fragment.hasAttribute("data-lint")) {
-					document.getElementById('lintcount').innerText = fragment.getAttribute("data-lint");
-					document.getElementById('contributorcount').innerText = fragment.getAttribute("data-contributors");
-				}
-			} );
-		</script>
-	</body>
-</html>
